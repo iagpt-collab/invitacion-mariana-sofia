@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101a3a">
+<meta name="description" content="Invitación a los XV años de Mariana Sofía — una noche mágica.">
+<title>XV años de Mariana Sofía</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+:root{--navy:#101a3a;--blue:#9fc8f4;--ice:#eaf5ff;--silver:#cbd6e6;--gold:#e9d9ae;--ink:#24334f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#0b1430,#18284e 55%,#eaf3ff 55%,#f8fbff);font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+.stars,.stars:before,.stars:after{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 20% 30%,#fff 45%,transparent 55%),radial-gradient(1px 1px at 70% 20%,#cce7ff 45%,transparent 55%),radial-gradient(1.5px 1.5px at 80% 65%,#fff 45%,transparent 55%),radial-gradient(1px 1px at 42% 80%,#fff 45%,transparent 55%);background-size:260px 260px;opacity:.6;z-index:0}
+.wrap{position:relative;z-index:1;max-width:850px;margin:auto;padding:22px}
+.hero{min-height:94vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:44px 12px 65px}
+.hero-inner{max-width:680px}
+.crown{font-size:36px;color:var(--gold);letter-spacing:8px}
+.eyebrow{font:12px Arial,sans-serif;letter-spacing:5px;text-transform:uppercase;color:#c8dcf5;margin:22px 0}
+h1{font-family:'Great Vibes','Brush Script MT',cursive;font-size:clamp(76px,14vw,116px);line-height:1.08;font-weight:normal;margin:10px 0;color:#fff;text-shadow:0 4px 25px #6d91c7}
+.subtitle{font-size:clamp(18px,4vw,25px);font-style:italic;color:#d9e9ff}
+.rule{width:110px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:25px auto}
+.date{font:14px Arial,sans-serif;letter-spacing:3px;color:#e8efff}
+.btn{display:inline-block;border:1px solid #d9e9ff;color:#fff;text-decoration:none;padding:13px 24px;border-radius:40px;font:12px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;margin-top:28px;background:#ffffff12;cursor:pointer}
+.btn:hover{background:#ffffff28}
+.card{background:#ffffffed;border:1px solid #d4e2f2;border-radius:22px;padding:clamp(22px,5vw,42px);margin:24px 0;box-shadow:0 18px 50px #14264b18}
+.section-title{text-align:center;color:#4e6f9c;font-size:30px;font-weight:normal;margin:0 0 10px}
+.kicker{text-align:center;font:11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#9babc0}
+.intro{text-align:center;line-height:1.8;font-size:18px;max-width:600px;margin:20px auto}
+.gallery{display:flex;flex-direction:column;gap:22px;margin-top:26px}
+.gallery figure{margin:0;background:#f5f9ff;border:1px solid #d6e1ef;border-radius:16px;padding:10px;box-shadow:0 8px 24px #14264b12}
+.gallery img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;object-position:center;border-radius:10px}
+.gallery figcaption{text-align:center;color:#7890ad;font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;padding:10px 0 3px}
+.calendar{max-width:390px;margin:25px auto 0;padding:20px;background:#f7faff;border:1px solid #cbd9eb;border-radius:18px;box-shadow:0 8px 24px #14264b12}
+.cal-head{display:flex;align-items:center;justify-content:space-between;color:#506f99;font-size:18px;margin-bottom:15px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center;font:12px Arial,sans-serif}
+.cal-grid span{padding:9px 0;border-radius:50%;color:#536783}
+.cal-grid .dow{font-size:10px;color:#91a2ba;font-weight:bold}
+.cal-grid .selected{background:#547db4;color:#fff;font-weight:bold;box-shadow:0 3px 10px #547db455}
+.cal-caption{text-align:center;color:#59769d;font:12px Arial,sans-serif;letter-spacing:1px;margin:15px 0 0}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.detail{padding:18px;border-radius:15px;background:#eff6ff;text-align:center}
+.detail b{display:block;color:#526f98;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.detail span{font-size:17px;line-height:1.5}
+.timeline{max-width:590px;margin:28px auto 0;position:relative}
+.timeline:before{content:"";position:absolute;left:35px;top:28px;bottom:28px;width:2px;background:linear-gradient(#9bb7e6,#d8e5f6,#9bb7e6);z-index:0}
+.event{display:grid;grid-template-columns:72px 34px minmax(0,1fr);gap:12px;position:relative;padding:0 0 19px;align-items:center}
+.time-wrap{display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.clock-face{width:58px;height:58px;border:3px solid #9aa8d0;border-radius:50%;background:radial-gradient(circle,#fff 57%,#e9efff 59%,#fff 69%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;box-shadow:0 3px 9px #243b7a30,inset 0 0 0 2px #dce5f8;color:#25396f}
+.clock-face:before{content:"";position:absolute;inset:4px;border:1px dotted #8a9bc7;border-radius:50%}
+.clock-face:after{content:"";position:absolute;left:50%;top:50%;width:13px;height:1.5px;background:#40578e;transform:rotate(-55deg);transform-origin:left center;border-radius:2px}
+.clock-face .clock-time{font: bold 11px Georgia,serif;line-height:1.05;z-index:1;white-space:nowrap}
+.clock-face .clock-meridiem{font:8px Georgia,serif;line-height:1.1;z-index:1;margin-top:2px}
+.event-icon{width:32px;height:32px;border-radius:50%;background:#1c2e68;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 3px 8px #172a6230;z-index:1}
+.event-card{margin:0;min-height:54px;display:flex;align-items:center;background:#fff;border:1px solid #d9e0ee;border-radius:13px;padding:13px 15px;box-shadow:0 6px 17px #1c2e6812;font-size:16px;line-height:1.35;color:#344263}
+.event:last-child{padding-bottom:0}
+.snow-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.snowflake{position:absolute;top:-14px;color:#fff;text-shadow:0 0 5px #8ca9d8,0 0 10px #fff;opacity:.8;animation:snow-fall linear infinite;will-change:transform}
+@keyframes snow-fall{0%{transform:translate3d(0,-5vh,0) rotate(0deg);opacity:0}10%{opacity:.85}90%{opacity:.8}100%{transform:translate3d(var(--drift),110vh,0) rotate(360deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.snowflake{animation:none;display:none}html{scroll-behavior:auto}}
+.note{text-align:center;line-height:1.8;font-size:17px}
+ .nowrap{white-space:nowrap}
+ .gift-envelope{display:block;font-size:42px;line-height:1.2;margin:10px auto 6px;filter:drop-shadow(0 3px 4px #5278a833)}
+.footer{text-align:center;color:#fff;padding:42px 18px 62px;margin:30px -22px -22px;background:linear-gradient(145deg,#101a3a 0%,#243c70 58%,#36588d 100%);border-top:1px solid #cbdcf3;box-shadow:0 -12px 35px #14264b18;position:relative}
+.footer h2{font-family:Georgia,serif;font-size:clamp(38px,8vw,48px);font-weight:normal;margin:8px 0 16px;color:#fff;text-shadow:0 2px 14px #9fc8f488}
+.footer p{font-size:17px;line-height:1.8;color:#fff;font-weight:500;margin:0 auto 20px;text-shadow:0 1px 5px #0b1430}
+.footer .date{color:#fff;font-weight:bold;letter-spacing:2.5px;font-size:12px;text-shadow:0 1px 5px #0b1430}
+@media(max-width:560px){.footer{margin-left:-22px;margin-right:-22px}}
+.wa{background:#527fb6;border:0;color:white}
+.countdown{display:flex;justify-content:center;gap:10px;margin:20px 0}
+.countdown div{background:#eff6ff;border-radius:12px;padding:12px 10px;min-width:65px}
+.countdown strong{display:block;font-size:24px;color:#5278a8}
+.countdown small{font:9px Arial,sans-serif;letter-spacing:1px;color:#788ca8}
+@media(max-width:560px){.details{grid-template-columns:1fr}.gallery img{max-height:none}.timeline:before{left:29px}.event{grid-template-columns:60px 30px minmax(0,1fr);gap:8px}.clock-face{width:54px;height:54px}.event-icon{width:29px;height:29px}.event-card{font-size:15px;padding:11px 12px}.hero{min-height:88vh}}
+
+/* Control de música: añadido sin alterar los estilos de la invitación */
+.music-toggle{
+ position:fixed;right:18px;bottom:18px;z-index:50;
+ display:flex;align-items:center;gap:9px;
+ border:1px solid #d9e9ff;border-radius:30px;padding:12px 17px;
+ background:linear-gradient(135deg,#152650,#36588d);color:#fff;
+ box-shadow:0 6px 22px #07132f66;font:13px Arial,sans-serif;
+ cursor:pointer
+}
+.music-toggle span:first-child{font-size:20px;line-height:1}
+.music-toggle:focus-visible{outline:3px solid #e9d9ae;outline-offset:3px}
+@media(max-width:560px){.music-toggle{right:12px;bottom:12px;padding:10px 14px}}
+
+</style>
+</head>
+<body>
+<div class="stars"></div><div class="snow-layer" id="snow-layer" aria-hidden="true"></div>
+<audio id="bg-music" src="assets/cancion-fondo.mp3" preload="auto" loop></audio>
+<button id="music-toggle" class="music-toggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+  <span aria-hidden="true">♫</span><span id="music-label">Escuchar música</span>
+</button>
+
+<header class="hero">
+ <div class="hero-inner">
+  <div class="crown">✧ ♕ ✧</div>
+  <div class="eyebrow">Una noche de ensueño</div>
+  <h1>Mariana<br>Sofía</h1>
+  <div class="subtitle">Mis XV años</div>
+  <div class="rule"></div>
+  <div class="date">SÁBADO · 12 DE DICIEMBRE · 2026</div>
+  <a class="btn" href="#invitacion">Descubre la invitación</a>
+ </div>
+</header>
+<main class="wrap" id="invitacion">
+ <section class="card">
+  <div class="kicker">Con la bendición de sus padres:</div>
+  <h2 class="section-title">Lina Duque</h2>
+  <p class="intro">Hay noches que se convierten en recuerdos para toda la vida. Con mucha ilusión, quiero invitarte a celebrar conmigo mis quince años y compartir una velada llena de magia, alegría y amor.</p>
+  <div class="countdown" id="countdown">
+   <div><strong id="days">--</strong><small>DÍAS</small></div><div><strong id="hours">--</strong><small>HORAS</small></div><div><strong id="minutes">--</strong><small>MIN</small></div><div><strong id="seconds">--</strong><small>SEG</small></div>
+  </div>
+  <div class="gallery">
+   <figure><img src="assets/mariana-1.jpg" alt="Mariana Sofía, recuerdo especial"><figcaption>Un recuerdo para atesorar</figcaption></figure>
+   <figure><img src="assets/mariana-2.jpg" alt="Retrato de Mariana Sofía"><figcaption>Mariana Sofía</figcaption></figure>
+   <figure><img src="assets/mariana-3.jpg" alt="Mariana Sofía"><figcaption>Momentos inolvidables</figcaption></figure>
+   <figure><img src="assets/mariana-4.jpg" alt="Mariana Sofía"><figcaption>Con mucho cariño</figcaption></figure>
+   <figure><img src="assets/mariana-5.jpg" alt="Mariana Sofía"><figcaption>Mi historia</figcaption></figure>
+   <figure><img src="assets/mariana-6.jpg" alt="Mariana Sofía"><figcaption>Un sueño que florece</figcaption></figure>
+   <figure><img src="assets/mariana-7.jpg" alt="Mariana Sofía"><figcaption>Mis quince años</figcaption></figure>
+  </div>
+ </section>
+ <section class="card">
+  <div class="kicker">Acompáñame a celebrar</div><h2 class="section-title">El gran día</h2>
+  <div class="details">
+   <div class="detail"><b>Fecha</b><span>Sábado<br>12 de diciembre de 2026</span></div>
+   <div class="detail"><b>Ceremonia</b><span>5:00 p. m.<br>Parroquia Santa María del Monte Carmelo</span></div>
+   <div class="detail"><b>Recepción</b><span>Finca Numantia<br>Vereda Guacas</span></div>
+   <div class="detail"><b>Llegada</b><span>6:30 p. m.<br>Te esperamos puntualmente</span></div>
+  </div>
+  <div class="calendar" aria-label="Calendario de diciembre de 2026">
+   <div class="cal-head"><span>✧</span><strong>Diciembre 2026</strong><span>✧</span></div>
+   <div class="cal-grid">
+    <span class="dow">D</span><span class="dow">L</span><span class="dow">M</span><span class="dow">M</span><span class="dow">J</span><span class="dow">V</span><span class="dow">S</span>
+    <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+    <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span class="selected">12</span>
+    <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+    <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+    <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span>
+   </div>
+   <p class="cal-caption">SÁBADO · 5:00 P. M. · MIS XV AÑOS</p>
+   <p style="text-align:center;margin:14px 0 0"><a class="btn" style="color:#5278a8;border-color:#9eb9d9;margin-top:0" href="mariana-sofia.ics" download>▦ Agendar en mi calendario</a></p>
+  </div>
+  <p style="text-align:center;margin:22px 0 0"><a class="btn" style="color:#5278a8;border-color:#9eb9d9" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Finca+Numantia+Vereda+Guacas+Risaralda">Ver ubicación de la recepción</a></p>
+ </section>
+ <section class="card">
+  <div class="kicker">Cada instante, un recuerdo</div><h2 class="section-title">Programa de la noche</h2>
+  <div class="timeline">
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">6:30</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♜</span><p class="event-card">Llegada de los invitados</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">7:00</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♛</span><p class="event-card">Entrada de la quinceañera</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">7:15</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♧</span><p class="event-card">Cambio de zapatilla</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">7:45</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♜</span><p class="event-card">Brindis y palabras de la mamá</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">8:00</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♫</span><p class="event-card">El vals</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">9:00</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♧</span><p class="event-card">Cena</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">10:00</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♕</span><p class="event-card">Torta</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">11:00</span><span class="clock-meridiem">p. m.</span></span></div><span class="event-icon" aria-hidden="true">♫</span><p class="event-card">¡A bailar!</p></div>
+   <div class="event"><div class="time-wrap"><span class="clock-face"><span class="clock-time">12:00</span><span class="clock-meridiem">a. m.</span></span></div><span class="event-icon" aria-hidden="true">✧</span><p class="event-card">Las doce: la hora mágica</p></div>
+  </div>
+ </section>
+ <section class="card">
+  <div class="kicker">Detalles para compartir</div><h2 class="section-title">Una nota especial</h2>
+  <p class="note">Queremos que compartas con nosotros una noche llena de alegría y recuerdos hermosos.</p>
+  <p class="note">Para mantener la esencia de esta celebración, te agradecemos asistir con vestimenta <b class="nowrap">casual elegante</b>.</p>
+  <p class="note" style="color:#5278a8">💙 Con cariño, el azul celeste está reservado exclusivamente para nuestra quinceañera.</p>
+  <div class="rule"></div>
+  <div class="note"><b>Obsequios</b><span class="gift-envelope" role="img" aria-label="Sobre para regalo">✉️</span>Tu compañía es el mejor regalo.<br>Si deseas tener un detalle conmigo, tendremos <b>lluvia de sobres</b>.</div>
+  <div class="rule"></div>
+  <p class="note"><b>Confirmación de asistencia</b><br>Por favor confirma antes del<br><strong>30 de noviembre de 2026</strong>.</p>
+  <p style="text-align:center"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/573108098951?text=Hola%20Lina%2C%20soy%20%5Bescribe%20tu%20nombre%5D.%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Mariana%20Sof%C3%ADa%2C%20el%2012%20de%20diciembre%20de%202026.%20Muchas%20gracias.">Confirmar por WhatsApp</a></p>
+ </section>
+</main>
+<footer class="footer">
+ <div class="crown">✧ ♕ ✧</div>
+ <h2>¡Te espero!</h2>
+ <p>Será una noche para soñar, celebrar<br>y guardar en el corazón.</p>
+ <div class="date">MARIANA SOFÍA · MIS XV AÑOS</div>
+</footer>
+<script>
+const snowLayer=document.getElementById('snow-layer');
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ for(let i=0;i<42;i++){
+  const flake=document.createElement('span');
+  flake.className='snowflake';
+  flake.textContent=i%4===0?'✧':'❄';
+  flake.style.left=((i*37)%100)+'%';
+  flake.style.fontSize=(8+(i%5)*3)+'px';
+  flake.style.animationDuration=(9+(i%9)*1.7)+'s';
+  flake.style.animationDelay=(-((i*1.9)%20))+'s';
+  flake.style.setProperty('--drift',((i%2===0?1:-1)*(12+(i%6)*7))+'px');
+  snowLayer.appendChild(flake);
+ }
+}
+const target = new Date('2026-12-12T17:00:00-05:00').getTime();
+function tick(){let diff=Math.max(0,target-Date.now());let d=Math.floor(diff/86400000);let h=Math.floor(diff%86400000/3600000);let m=Math.floor(diff%3600000/60000);let s=Math.floor(diff%60000/1000);document.getElementById('days').textContent=d;document.getElementById('hours').textContent=h;document.getElementById('minutes').textContent=m;document.getElementById('seconds').textContent=s;}
+tick();setInterval(tick,1000);
+
+// Música de fondo: intenta iniciar automáticamente y permite silenciarla.
+(function(){
+ const audio=document.getElementById('bg-music');
+ const button=document.getElementById('music-toggle');
+ const label=document.getElementById('music-label');
+ if(!audio || !button || !label) return;
+ audio.volume=0.8;
+
+ function paint(playing){
+   label.textContent=playing?'Silenciar música':'Escuchar música';
+   button.setAttribute('aria-label',playing?'Silenciar música':'Reproducir música');
+   button.setAttribute('aria-pressed',playing?'true':'false');
+   button.querySelector('span:first-child').textContent=playing?'♫':'♪';
+ }
+
+ async function tryStartMusic(){
+   if(!audio.paused) return true;
+   try{
+     await audio.play();
+     paint(true);
+     return true;
+   }catch(err){
+     // El navegador puede bloquear el sonido automático.
+     paint(false);
+     return false;
+   }
+ }
+
+ button.addEventListener('click', async function(){
+   if(audio.paused){
+     try{
+       await audio.play();
+       paint(true);
+     }catch(err){
+       label.textContent='No se pudo reproducir';
+       console.error('No se pudo iniciar el audio:',err);
+     }
+   }else{
+     audio.pause();
+     paint(false);
+   }
+ });
+
+ audio.addEventListener('play',()=>paint(true));
+ audio.addEventListener('pause',()=>paint(false));
+ audio.addEventListener('error',()=>{
+   label.textContent='Audio no disponible';
+   console.error('Error de audio:',audio.error);
+ });
+
+ // Primer intento al abrir la invitación.
+ paint(false);
+ tryStartMusic();
+
+ // Si el navegador rechazó el inicio automático, se vuelve a intentar
+ // cuando el invitado empieza a interactuar/desplazarse por la invitación.
+ let retryDone=false;
+ function retryOnFirstInteraction(){
+   if(retryDone || !audio.paused) return;
+   retryDone=true;
+   tryStartMusic();
+   window.removeEventListener('scroll',retryOnFirstInteraction);
+   window.removeEventListener('touchstart',retryOnFirstInteraction);
+   window.removeEventListener('pointerdown',retryOnFirstInteraction);
+ }
+ window.addEventListener('scroll',retryOnFirstInteraction,{passive:true});
+ window.addEventListener('touchstart',retryOnFirstInteraction,{passive:true});
+ window.addEventListener('pointerdown',retryOnFirstInteraction,{passive:true});
+})();
+
+</script>
+</body>
+</html>

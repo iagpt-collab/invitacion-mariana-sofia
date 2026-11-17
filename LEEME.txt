@@ -1,0 +1,22 @@
+INVITACIÓN WEB — XV AÑOS DE MARIANA SOFÍA
+
+Contenido:
+- index.html: invitación web interactiva y adaptable a celulares.
+- assets/: fotografías compartidas para la invitación.
+
+Para publicarla en GitHub Pages:
+1. Crea un repositorio NUEVO llamado invitacion-mariana-sofia.
+2. Sube index.html y la carpeta assets (manteniendo la estructura).
+3. En Settings > Pages, selecciona Deploy from a branch, branch main y carpeta /root.
+4. Guarda. GitHub publicará la web en:
+   https://TU-USUARIO.github.io/invitacion-mariana-sofia/
+
+El repositorio invitacion-valentina NO debe modificarse.
+
+
+MUSICA DE FONDO
+La canción está en assets/cancion-fondo.mp3. En la invitación, el visitante debe pulsar el botón «Escuchar música» para iniciar el sonido. No se inicia automáticamente porque los navegadores suelen bloquear el audio automático.
+
+
+INICIO AUTOMATICO DE MUSICA
+La invitacion intenta iniciar la musica al abrirse y vuelve a intentarlo cuando el visitante comienza a interactuar o desplazarse. Algunos navegadores bloquean el audio automatico con sonido; en ese caso, el visitante puede usar el boton flotante «Escuchar musica». El mismo boton permite silenciarla.

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mariana Sofia//XV Anos//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:mariana-sofia-xv-20261212@example.com
+DTSTAMP:20261111T180000Z
+DTSTART;TZID=America/Bogota:20261212T170000
+DTEND;TZID=America/Bogota:20261213T000000
+SUMMARY:XV años de Mariana Sofía
+LOCATION:Parroquia Santa María del Monte Carmelo / Finca Numantia, Vereda Guacas
+DESCRIPTION:Ceremonia a las 5:00 p. m. y recepción a las 6:30 p. m.
+END:VEVENT
+END:VCALENDAR
